@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\F1M24VoiceManager.Core\F1M24VoiceManager.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>F1M24VoiceManager</AssemblyName>
+    <Product>F1M24 Voice Manager</Product>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <!-- The in-game mod (built from src/native/F1VoiceMapper) shipped next to the exe. -->
+  <PropertyGroup>
+    <ModSource>..\native\F1VoiceMapper\mod\F1VoiceMapper\</ModSource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(ModSource)F1VoiceMapper.dll" Link="payload\F1VoiceMapper\F1VoiceMapper.dll" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <Content Include="$(ModSource)Scripts\main.lua" Link="payload\F1VoiceMapper\Scripts\main.lua" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="$(ModSource)enabled.txt" Link="payload\F1VoiceMapper\enabled.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

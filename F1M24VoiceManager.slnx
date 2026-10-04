@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/F1M24VoiceManager.App/F1M24VoiceManager.App.csproj" />
+    <Project Path="src/F1M24VoiceManager.Core/F1M24VoiceManager.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/F1M24VoiceManager.Core.Tests/F1M24VoiceManager.Core.Tests.csproj" />
+  </Folder>
+</Solution>

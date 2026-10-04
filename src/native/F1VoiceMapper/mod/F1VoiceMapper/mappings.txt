@@ -1,0 +1,5 @@
+# F1VoiceMapper - one mapping per line (edits apply live with v0.2+)
+# D:source_driver_staff_id=donor_driver_staff_id
+# E:source_engineer_staff_id=donor_engineer_staff_id
+D:1=10 # Lewis Hamilton -> Max Verstappen
+E:320=51 # Marcus Dudley -> Peter Bonnington

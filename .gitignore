@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+dist/
+*.user
+.vs/
+src/native/F1VoiceMapper/build/
+src/native/F1VoiceMapper/test/out/
+*.obj
+*.log
+
+# Local backups / game-extracted assets (copyrighted, not redistributable)
+backup/
+voicepacks/
+
+# Python
+__pycache__/
+*.pyc
